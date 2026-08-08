@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <form id="contactForm">
+                <h1>Contact Us</h1>
+                <p>We Would Love to Hear From You!</p>
+                <label>Name</label> 
+                <input type="text" id="name" placeholder="Enter your name">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <label>Gender</label>
+                <div class="radio">
+                    <lable>
+                        <input type="radio" name="gender" value="male"> Male
+                    </lable>
+                    <lable>
+                        <input type="radio" name="gender" value="female"> Female
+                    </lable>
+                </div>
+                <label>Reason For Contact</label>
+                <select id="reason">
+                    <option value="">Select an option</option> 
+                    <option>General Question</option> 
+                    <option>Feedback</option> 
+                    <option>Project Inquiry</option>
+                </select>
+
+                <label>Interests</label>
+                <div class="checkbox">
+                    <lable>
+                        <input type="checkbox" name="interests" value="Web Design"> Web Design
+
+                    </lable>
+                    <label>
+                        <input type="checkbox" name="interests" value="Development">  Development    
+                    </label>
+                    
+                </div>  
+                <label>Message</label>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+                <button type="submit">Submit</button>
+                <p id="result"></p>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
