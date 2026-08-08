@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore Product</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>TechStore</h2>
+    <div class="cart">
+        🛒 Cart: <span id="cartCount">0</span>
+    </div>
+</header>
+
+
+<main>
+
+    <div class="product-image">
+        <img src="https://via.placeholder.com/500x500" alt="Wireless Headphones">
+    </div>
+
+
+    <div class="product-info">
+
+        <p class="category">Wireless Audio</p>
+
+        <h1>Premium Wireless Headphones</h1>
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐ 4.8
+        </div>
+
+        <h2 class="price">₹2,999</h2>
+
+        <p>
+            Experience high-quality sound with premium
+            wireless headphones featuring comfortable
+            ear cushions and long battery life.
+        </p>
+
+        <div class="quantity">
+
+            <button onclick="decrease()">−</button>
+
+            <span id="quantity">1</span>
+
+            <button onclick="increase()">+</button>
+
+        </div>
+
+        <button class="add-cart" onclick="addToCart()">
+            Add to Cart
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
